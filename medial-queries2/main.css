@@ -1,3 +1,68 @@
+*{
+  outline: 2px solid blue;
+}
 body {
   background: papayawhip;
+}
+
+header, footer{
+  background-color: lightpink;
+  min-height: 10vh;
+}
+
+.container{
+  display:flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: auto;
+  margin: 0 auto;
+
+}
+
+.container-two {
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  align-items: ;
+  min-height: 100vh;
+}
+aside{
+  display: flex;
+  width: 90%;
+  min-height: 25vh;
+  justify-content: space-around;
+}
+aside >div {
+  flex-grow: 10;
+
+}
+
+main{
+  width: 90%;
+  flex-grow: 4;
+}
+
+.f{
+  min-width: 100%;
+}
+
+@media (min-width:600px){
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header{
+    width:100%;
+    max-height: 10vh;
+  }
+  .container-two{
+    min-height: 75%;
+    min-width: 75%;
+    margin: 0;
+  }
+  footer{
+    min-width: 15vh;
+    margin:0; 
+  }
 }

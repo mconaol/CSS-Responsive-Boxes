@@ -1,3 +1,51 @@
 body {
   background: peachpuff;
 }
+*{
+  outline: 1px solid white
+}
+.container{
+  background-color: lightcyan;
+  display:flex; 
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: stretch;
+ 
+}
+.container-two {
+  background-color: skyblue;
+  display: flex;
+  flex-wrap:wrap;
+  flex-grow: 4;
+  min-height:90vw; 
+  width:100%; 
+  justify-content: space-evenly;
+  flex-basis: auto;
+}
+
+main >div {
+  width: 20%;
+  margin: 4vw;
+  background-color: white;
+}
+header {
+  width:100%;
+  background-color: pink;
+  flex-grow: 1;
+}
+footer{
+  background-color: pink;
+  flex-grow: 3;
+}
+@media (min-width 600px){
+  .container{
+    flex-wrap: wrap;
+  }
+  .container-two{
+    display: flex; 
+    flex-wrap: wrap;
+    flex-grow: 3;
+    align-items: center;
+    margin: 1em;
+  }
+}
